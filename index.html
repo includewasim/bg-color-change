@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color App</title>
+    <style>
+        body{
+            background-color: rgb(233, 233, 155);
+            font-size: 40px;
+        }
+       button {
+        font-size: 100px;
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Color App</h1>
+        <div id="btn">
+            <button id="btn1">Red</button>
+            <button id="btn2">Green</button>
+            <button id="btn3">Blue</button>
+        </div>
+    </center>
+
+    <script>
+        let btn1=document.getElementById("btn1");
+        let btn2=document.getElementById("btn2");
+        let btn3=document.getElementById("btn3");
+
+        btn1.addEventListener("click",function()
+    {
+        document.body.style.backgroundColor = "red";
+    })
+    btn2.addEventListener("click",function()
+    {
+        document.body.style.backgroundColor = "green";
+    })
+
+    btn3.addEventListener("click",function()
+    {
+        document.body.style.backgroundColor = "blue";
+    })
+
+    </script>
+</body>
+</html>
